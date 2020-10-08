@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background"
+    tools:context=".registerActivity">
+
+
+    <Button
+        android:id="@+id/btnsign"
+        android:layout_width="209dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="24dp"
+        android:background="#4CAF50"
+        android:text="Sign In"
+        app:layout_constraintStart_toStartOf="@+id/remember"
+        app:layout_constraintTop_toBottomOf="@+id/remember" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+
+        android:hint="Password"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="125dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="20dp"
+        android:text="Remember Me"
+        app:layout_constraintStart_toStartOf="@+id/confirmpassword"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpassword" />
+
+    <TextView
+        android:id="@+id/txttop"
+        android:layout_width="213dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:background="#7900CDD4"
+        android:paddingLeft="32dp"
+        android:paddingTop="15dp"
+        android:paddingRight="32dp"
+
+        android:text="New User"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="confirm password"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="E-Mail address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/mobile"
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txttop"
+        app:layout_constraintTop_toBottomOf="@+id/txttop" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Mobile No."
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/txtname"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

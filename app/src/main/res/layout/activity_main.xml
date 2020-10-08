@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/india"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#4CAF50"
+        android:text="Login"
+
+        app:layout_constraintStart_toStartOf="@+id/remember"
+        app:layout_constraintTop_toBottomOf="@+id/remember" />
+
+    <EditText
+
+        android:id="@+id/txtusername"
+        android:layout_width="218dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Username"
+
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txttop"
+        app:layout_constraintTop_toBottomOf="@+id/txttop" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="218dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Password"
+
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtusername"
+        app:layout_constraintTop_toBottomOf="@+id/txtusername" />
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Remember Me"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/txttop"
+        android:background="#BA03F4A0"
+        android:layout_width="213dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="52dp"
+        android:paddingLeft="32dp"
+        android:paddingTop="15dp"
+        android:paddingRight="32dp"
+        android:text="User Login"
+
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginLeft="196dp"
+        android:layout_marginTop="28dp"
+        android:background="#4CAF50"
+        android:text="Register"
+        app:layout_constraintStart_toStartOf="@+id/remember"
+        app:layout_constraintTop_toBottomOf="@+id/remember" />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="152dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="23dp"
+        android:paddingTop="3dp"
+        android:text="forgot password?"
+        app:layout_constraintEnd_toEndOf="@+id/btnregister"
+        app:layout_constraintTop_toBottomOf="@+id/btnregister" />
+
+    <TextView
+        android:id="@+id/attempts"
+        android:layout_width="286dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:background="#ffffff"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:text="No.of attempts Remaining:5"
+        app:layout_constraintEnd_toEndOf="@+id/forgot"
+        app:layout_constraintTop_toBottomOf="@+id/forgot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
